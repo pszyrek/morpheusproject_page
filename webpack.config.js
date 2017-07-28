@@ -16,6 +16,10 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.(png|woff|woff2|eot|ttf|svg|otf)$/,
+                loader: 'url-loader?limit=100000'
+            },
+            {
                 test: /\.js$/,
                 loader: "babel-loader",
                 include: path.join(__dirname, 'app')
@@ -24,13 +28,8 @@ module.exports = {
                 test: /\.(css|scss|sass)$/,
                 loader: ETP.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader!postcss-loader!sass-loader'
+                    use: ['css-loader', 'resolve-url-loader', 'postcss-loader', 'sass-loader']
                 }),
-                include: path.join(__dirname, 'app')
-            },
-            {
-                test: /\.(png|jpg)$/,
-                loader: 'file-loader',
                 include: path.join(__dirname, 'app')
             }
         ]

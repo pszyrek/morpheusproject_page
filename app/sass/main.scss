@@ -1,4 +1,8 @@
-@import './helpers/reset';
+// Layout
 @import './layout/grid';
+@import './layout/fonts';
+
+// Helpers
+@import './helpers/reset';
 @import './helpers/mixins/responsive';
 @import './layout/navbar';
