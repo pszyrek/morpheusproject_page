@@ -1,8 +1,13 @@
 // Layout
 @import './layout/grid';
 @import './layout/fonts';
+@import './layout/header';
+@import './layout/colors';
 
 // Helpers
 @import './helpers/reset';
 @import './helpers/mixins/responsive';
-@import './layout/navbar';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}

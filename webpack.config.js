@@ -28,7 +28,7 @@ module.exports = {
                 test: /\.(css|scss|sass)$/,
                 loader: ETP.extract({
                     fallback: 'style-loader',
-                    use: ['css-loader', 'resolve-url-loader', 'postcss-loader', 'sass-loader']
+                    use: ['css-loader', 'postcss-loader', 'sass-loader']
                 }),
                 include: path.join(__dirname, 'app')
             }
