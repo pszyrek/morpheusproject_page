@@ -1,12 +1,5 @@
 @import './helpers/variables';
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 0 1 auto;
-    padding: .5rem;
-}
+@import '../helpers/mixins/grid';
 
 .box {
     display: flex;
@@ -15,66 +8,31 @@
     flex: 0 1 auto;
 }
 
+.box-column {
+    @extend .box;
+    flex-direction: column;
+}
+
 @media only screen and (min-width: $lg-size) {
-
     @for $i from 1 through $columns {
-        .col-xs-#{$i} {
-            flex: 0 0 auto;
-            flex-basis: (100% / $columns) * $i;
-            max-width: (100% / $columns) * $i;
-        }
-
-        .col-xs-offset-#{$i} {
-            flex: 0 0 auto;
-            margin-left: (100% / $columns) * $i;
-        }
+        @include grid('xs', $columns, $i);
     }
 }
 
 @media only screen and (max-width: $sm-size){
-
     @for $i from 1 through $columns {
-        .col-sm-#{$i} {
-            flex: 0 0 auto;
-            flex-basis: (100% / $columns) * $i;
-            max-width: (100% / $columns) * $i;
-        }
-
-        .col-sm-offset-#{$i} {
-            flex: 0 0 auto;
-            margin-left: (100% / $columns) * $i;
-        }
+        @include grid('sm', $columns, $i);
     }
 }
 
 @media only screen and (min-width: $sm-size + 1) and (max-width: $md-size) {
-
     @for $i from 1 through $columns {
-        .col-md-#{$i} {
-            flex: 0 0 auto;
-            flex-basis: (100% / $columns) * $i;
-            max-width: (100% / $columns) * $i;
-        }
-
-        .col-md-offset-#{$i} {
-            flex: 0 0 auto;
-            margin-left: (100% / $columns) * $i;
-        }
+        @include grid('md', $columns, $i);
     }
 }
 
 @media only screen and (min-width: $md-size + 1) and (max-width: $lg-size) {
-
     @for $i from 1 through $columns {
-        .col-lg-#{$i} {
-            flex: 0 0 auto;
-            flex-basis: (100% / $columns) * $i;
-            max-width: (100% / $columns) * $i;
-        }
-
-        .col-lg-offset-#{$i} {
-            flex: 0 0 auto;
-            margin-left: (100% / $columns) * $i;
-        }
+        @include grid('lg', $columns, $i);
     }
 }
