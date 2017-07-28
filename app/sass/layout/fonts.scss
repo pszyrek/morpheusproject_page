@@ -1,5 +1,9 @@
-@import '../helpers/mixins/font-face';
+@font-face {
+    font-family: 'Lombok';
+    src: url('../fonts/Lombok.otf') format('opentype');
+    font-weight: bold;
+}
 
 .font-primary {
-    @include font-face('Lombok', '../assets/fonts/Lombok.otf', 'opentype');
+    font-family: 'Lombok';
 }

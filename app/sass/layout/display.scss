@@ -1,0 +1,9 @@
+.flex                   {display: flex};
+.flex-column            {display: flex; flex-direction: column;};
+
+.fj-around              {justify-content: space-around};
+.fj-center              {justify-content: center};
+.fj-start               {justify-content: flex-start};
+.fj-end                 {justify-content: flex-end};
+
+.fa-center              {align-items: center;}

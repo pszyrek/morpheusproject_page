@@ -1,4 +1,0 @@
-@mixin font-face($name, $path, $format) {
-	font-family: $name;
-	src: url($path) format($format);
-}
