@@ -1,11 +1,13 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
-const babel = require('gulp-babel');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
 gulp.task('serve', function () {
     browserSync.init({
-        server: "./app"
+        server: "./app",
+        files: ['app/assets/scripts/*']
     });
 
     gulp.watch("app/sass/**/*.scss", ['sass']);
@@ -14,8 +16,9 @@ gulp.task('serve', function () {
 });
 
 gulp.task('js', function () {
-    return gulp.src('app/scripts/main.js')
-        .pipe(babel())
+    return browserify('app/scripts/main.js')
+        .bundle()
+        .pipe(source('main.js'))
         .pipe(gulp.dest('app/assets/scripts'))
         .pipe(browserSync.stream());
 });
