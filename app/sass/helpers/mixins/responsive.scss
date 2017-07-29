@@ -1,5 +1,7 @@
-@mixin responsive($min-width, $max-width) {
-    @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+@import '../variables';
+
+@mixin responsive($size-value) {
+    @media only screen and (min-width: nth($size-value, 1)) and (max-width: nth($size-value, 2)) {
         @content;
     }
 }

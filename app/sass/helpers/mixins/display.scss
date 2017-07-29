@@ -1,0 +1,23 @@
+@mixin display($size) {
+
+    @if $size == null {
+        .flex                           {display: flex};
+        .flex-column                    {display: flex; flex-direction: column;};
+        .fj-between                     {justify-content: space-between};
+        .fj-around                      {justify-content: space-around};
+        .fj-center                      {justify-content: center};
+        .fj-start                       {justify-content: flex-start};
+        .fj-end                         {justify-content: flex-end};
+        .fa-center                      {align-items: center;}
+        .fa-end                         {align-items: flex-end};
+    } @else {
+        .flex-column-#{$size}           {display: flex; flex-direction: column;};
+        .fj-between-#{$size}            {justify-content: space-between};
+        .fj-around-#{$size}             {justify-content: space-around};
+        .fj-center-#{$size}             {justify-content: center};
+        .fj-start-#{$size}              {justify-content: flex-start};
+        .fj-end-#{$size}                {justify-content: flex-end};
+        .fa-center-#{$size}             {align-items: center;}
+        .fa-end-#{$size}                {align-items: flex-end};
+    }
+}

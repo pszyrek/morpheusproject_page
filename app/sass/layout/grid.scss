@@ -1,5 +1,6 @@
 @import './helpers/variables';
 @import '../helpers/mixins/grid';
+@import '../helpers/mixins/responsive';
 
 .box {
     display: flex;
@@ -13,26 +14,15 @@
     flex-direction: column;
 }
 
-@media only screen and (min-width: $lg-size) {
-    @for $i from 1 through $columns {
-        @include grid('sl', $columns, $i);
-    }
+
+@for $i from 1 through $columns {
+    @include grid(null, $columns, $i);
 }
 
-@media only screen and (max-width: $sm-size){
-    @for $i from 1 through $columns {
-        @include grid('sm', $columns, $i);
-    }
-}
-
-@media only screen and (min-width: $sm-size + 1) and (max-width: $md-size) {
-    @for $i from 1 through $columns {
-        @include grid('md', $columns, $i);
-    }
-}
-
-@media only screen and (min-width: $md-size + 1) and (max-width: $lg-size) {
-    @for $i from 1 through $columns {
-        @include grid('lg', $columns, $i);
+@each $size, $size-value in $sizes {
+    @include responsive($size-value) {
+        @for $i from 1 through $columns {
+            @include grid($size, $columns, $i);
+        }
     }
 }

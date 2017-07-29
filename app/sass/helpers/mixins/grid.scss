@@ -1,12 +1,26 @@
 @mixin grid($size, $columns, $count) {
-    .#{$size}-#{$count} {
-        flex: 0 0 auto;
-        flex-basis: (100% / $columns) * $count;
-        max-width: (100% / $columns) * $count;
-    }
 
-    .#{$size}-off-#{$count} {
-        flex: 0 0 auto;
-        margin-left: (100% / $columns) * $count;
+    @if $size == null {
+        .w#{-$count}{
+            flex: 0 0 auto;
+            flex-basis: (100% / $columns) * $count;
+            max-width: (100% / $columns) * $count;
+        }
+
+        .w-off#{-$count} {
+            flex: 0 0 auto;
+            margin-left: (100% / $columns) * $count;
+        }
+    } @else {
+        .w-#{$count}-#{$size} {
+            flex: 0 0 auto;
+            flex-basis: (100% / $columns) * $count;
+            max-width: (100% / $columns) * $count;
+        }
+
+        .w-off-#{$count}-#{$size} {
+            flex: 0 0 auto;
+            margin-left: (100% / $columns) * $count;
+        }
     }
 }

@@ -7,7 +7,6 @@ $sm-size: 768px;
 $md-size: 1024px;
 $lg-size: 1200px;
 $sl-size: 1920px;
-$xl-size: 2560px;
 
 $colors: (
     'w': #fff,
@@ -17,4 +16,11 @@ $colors: (
     'tertiary': #151515,
     'quaternary': #455a64,
     'accent': #24bae2 
+);
+
+$sizes: (
+    's': ($default-size, $sm-size + 1),
+    'm': ($sm-size, $md-size + 1),
+    'l': ($md-size, $lg-size + 1),
+    'x': ($lg-size, $sl-size + 1)
 );
