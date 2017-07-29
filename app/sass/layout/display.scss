@@ -2,12 +2,15 @@
 .flex                   {display: flex};
 .flex-column            {display: flex; flex-direction: column;};
 
+
+.fj-between             {justify-content: space-between};
 .fj-around              {justify-content: space-around};
 .fj-center              {justify-content: center};
 .fj-start               {justify-content: flex-start};
 .fj-end                 {justify-content: flex-end};
 
 .fa-center              {align-items: center;}
+.fa-end              {align-items: flex-end};
 
 .vp-height-100vh        {min-height: 100vh;}
 
@@ -16,12 +19,14 @@
 @include responsive($lg-size, $sl-size){
     .sl-flex-column            {display: flex; flex-direction: column;};
 
+    .sl-fj-between             {justify-content: space-between};
     .sl-fj-around              {justify-content: space-around};
     .sl-fj-center              {justify-content: center};
     .sl-fj-start               {justify-content: flex-start};
     .sl-fj-end                 {justify-content: flex-end};
 
     .sl-fa-center              {align-items: center;}
+    .sl-fa-end              {align-items: flex-end};
 };
 
 //lg-size
@@ -29,12 +34,14 @@
 @include responsive($md-size, $lg-size) {
     .lg-flex-column            {display: flex; flex-direction: column;};
 
+    .lg-fj-between             {justify-content: space-between};
     .lg-fj-around              {justify-content: space-around};
     .lg-fj-center              {justify-content: center};
     .lg-fj-start               {justify-content: flex-start};
     .lg-fj-end                 {justify-content: flex-end};
 
     .lg-fa-center              {align-items: center};
+    .lg-fa-end              {align-items: flex-end};
 }
 
 //md-size
@@ -42,12 +49,14 @@
 @include responsive($sm-size, $md-size) {
     .md-flex-column            {display: flex; flex-direction: column;};
 
+    .md-fj-between             {justify-content: space-between};
     .md-fj-around              {justify-content: space-around};
     .md-fj-center              {justify-content: center};
     .md-fj-start               {justify-content: flex-start};
     .md-fj-end                 {justify-content: flex-end};
 
     .md-fa-center              {align-items: center};
+    .md-fa-end              {align-items: flex-end};
 }
 
 //sm-size
@@ -55,10 +64,12 @@
 @include responsive($default-size, $sm-size) {
     .sm-flex-column            {display: flex; flex-direction: column;};
 
+    .sm-fj-between             {justify-content: space-between};
     .sm-fj-around              {justify-content: space-around};
     .sm-fj-center              {justify-content: center};
     .sm-fj-start               {justify-content: flex-start};
     .sm-fj-end                 {justify-content: flex-end};
 
     .sm-fa-center              {align-items: center};
+    .sm-fa-end              {align-items: flex-end};
 }

@@ -1,0 +1,13 @@
+.team-section {
+    margin: 0 auto 0 auto;
+
+    &__name-brand {
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    &__name-title {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}
