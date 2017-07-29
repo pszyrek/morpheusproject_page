@@ -1,20 +1,10 @@
-// html {
-//   font-size: 62.5%; // For rem units support
-// }
+@import '../helpers/variables';
+@import '../helpers/mixins/responsive';
 
-// html.text-large {
-//   font-size: 75%;
-// }
+html.text-small {
+  font-size: 50%;
+}
 
-// html.text-small {
-//   font-size: 50%;
-// }
-
-/* Material Design Typography */
-
-// Variables
-// ----------------------------
-//## Alpha values for grey text, icons, and dividers
 $gray-darker:            #212121; // #212121 - text
 $gray-dark:              #757575; // #757575 - secondary text, icons
 $gray:                   #bdbdbd; // #bdbdbd - hint text
@@ -22,6 +12,7 @@ $gray-light:             #e0e0e0; // #e0e0e0 - divider
 $gray-lighter:           #f5f5f5; // #f5f5f5 - background
 
 //** Typographic Scale
+
 $font-size-display-4:       82;
 $font-size-display-3:       56;
 $font-size-display-2:       45;
@@ -35,7 +26,7 @@ $font-size-body-1:          13;
 $font-size-caption:         12;
 $font-size-label:           12;
 $font-size-menu:            13;
-$font-size-button:          14;
+$font-size-button:          12;
 
 //** Typographic Scale for devices (max-width: 960px)
 $font-size-dv-subhead:      16;
@@ -59,7 +50,7 @@ $font-weight-menu:          400;
 $font-weight-button:        400;
 
 //** Line Height
-$line-height-display-4:     128;
+$line-height-display-4:     40;
 $line-height-display-3:     84;
 $line-height-display-2:     48;
 $line-height-display-1:     40;
@@ -165,13 +156,11 @@ $font-color-button:         $gray-darker;
 .subhead-2 {
   @include font($font-size-subhead-2, $line-height-subhead-2, $letter-spacing-subhead-2);
   font-weight: $font-weight-subhead-2;
-  color: $font-color-subhead-2;
   text-transform: inherit;
 }
 .subhead-1 {
   @include font($font-size-subhead-1, $line-height-subhead-1, $letter-spacing-subhead-1);
   font-weight: $font-weight-subhead-1;
-  color: $font-color-subhead-1;
   text-transform: inherit;
 }
 .body-2 {
