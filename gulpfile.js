@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+const babel = require('gulp-babel');
 
 gulp.task('serve', function () {
     browserSync.init({
@@ -8,8 +9,15 @@ gulp.task('serve', function () {
     });
 
     gulp.watch("app/sass/**/*.scss", ['sass']);
+    gulp.watch("app/scripts/**/*.js", ['js']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("app/*.js").on('change', browserSync.reload)
+});
+
+gulp.task('js', function () {
+    return gulp.src('app/scripts/main.js')
+        .pipe(babel())
+        .pipe(gulp.dest('app/assets/scripts'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('sass', function () {

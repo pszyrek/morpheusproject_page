@@ -29,6 +29,7 @@ $font-size-menu:            13;
 $font-size-button:          12;
 
 //** Typographic Scale for devices (max-width: 960px)
+$font-size-dv-display-1:    54;
 $font-size-dv-subhead:      16;
 $font-size-dv-body:         14;
 $font-size-dv-menu:         14;
@@ -202,6 +203,9 @@ $font-color-button:         $gray-darker;
 
 // Font-size for device
 @media only screen and (max-width: 960px) {
+  .display-1 {
+    @include font-size($font-size-dv-subhead);
+  }
   .subhead-2 {
     @include font-size($font-size-dv-subhead);
   }
