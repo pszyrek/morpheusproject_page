@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: $lg-size) {
     @for $i from 1 through $columns {
-        @include grid('xs', $columns, $i);
+        @include grid('sl', $columns, $i);
     }
 }
 
