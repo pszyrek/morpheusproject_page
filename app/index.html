@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <script async src="https://www.youtube.com/iframe_api"></script>
     </head>
 
     <body class="bg-col-secondary">
@@ -25,10 +26,18 @@
             </div>
         </header>
 
-        <section class="vp-height-100vh col-primary flex fj-center-x fa-center-x bg-col-primary">
+        <section class="main-section vp-height-100vh col-primary flex fj-center-x fa-center-x bg-col-primary">
 
-            <h1 size-class="S: uppercase, M: test" class="font-primary display-4">MORPHEUS</h1>
+            <iframe id="main-section__video-player" src="https://www.youtube.com/embed/adwn1MU20RA?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 
+            <div class="main-section__title-container w-12 flex flex-column fa-center">
+                <h1 size-class="S: uppercase, M: test" class="font-primary display-4">MORPHEUS</h1>
+                <p class="col-accent subhead-1">The overcome of fear never been easier</p>
+            </div>
+
+            <div class="main-section__button-container flex fj-center">
+                <button class="button" onmouseover="showPlayer();" onmouseout="hidePlayer();">watch video</button>
+            </div>
         </section>
 
         <section class="team-section col-quaternary flex flex-column fa-center w-10-x">
