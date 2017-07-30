@@ -2,7 +2,7 @@
 
     @if $size == null {
         .flex                           {display: flex};
-        .flex-column                    {display: flex; flex-direction: column;};
+        .flex-column                    {flex-direction: column;};
         .fj-between                     {justify-content: space-between};
         .fj-around                      {justify-content: space-around};
         .fj-center                      {justify-content: center};
@@ -11,7 +11,7 @@
         .fa-center                      {align-items: center;}
         .fa-end                         {align-items: flex-end};
     } @else {
-        .flex-column-#{$size}           {display: flex; flex-direction: column;};
+        .flex-column-#{$size}           {flex-direction: column;};
         .fj-between-#{$size}            {justify-content: space-between};
         .fj-around-#{$size}             {justify-content: space-around};
         .fj-center-#{$size}             {justify-content: center};
