@@ -12,7 +12,6 @@ function onYouTubeIframeAPIReady() {
         videoId: 'adwn1MU20RA',
         playerVars: {
             autoplay: 1,
-            controls: 0
         },
         events: {
             'onReady': function (e) {

@@ -12,7 +12,11 @@ function onYouTubeIframeAPIReady() {
         videoId: 'adwn1MU20RA',
         playerVars: {
             autoplay: 1,
-            controls: 0
+            controls: 0,
+            loop: 1,
+            rel: 0,
+            enablejsapi: 1,
+            playlist: 'adwn1MU20RA'
         },
         events: {
             'onReady': function (e) {
