@@ -16,9 +16,7 @@ gulp.task('serve', function () {
 });
 
 gulp.task('js', function () {
-    return browserify('app/scripts/main.js')
-        .bundle()
-        .pipe(source('main.js'))
+    return gulp.src('app/scripts/main.js')
         .pipe(gulp.dest('app/assets/scripts'))
         .pipe(browserSync.stream());
 });
