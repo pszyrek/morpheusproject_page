@@ -891,27 +891,36 @@ html.text-small {
   right: 0; }
 
 .team-section {
-  position: relative;
-  margin: 0 auto 0 auto; }
+  margin: 0 auto 0 auto;
+  width: 100%; }
 
 .team-section__name {
   width: 100%;
   margin-top: 3rem; }
 
 .team-section__name-brand {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0.3rem; }
 
 .team-section__name-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300; }
 
 .team-section__block {
   width: 100%;
   margin-bottom: 3rem; }
 
+.team-section__block-element {
+  width: 100%; }
+
 .team-section__block-element:first-child {
   margin-top: 3rem; }
+
+.team-section__block-element:nth-child(2) {
+  margin-top: -230px; }
+
+.team-section__block-element:last-child {
+  margin-bottom: 3rem; }
 
 .team-section__block-element-item:first-child {
   margin-right: 6rem; }
@@ -920,14 +929,14 @@ html.text-small {
   margin-left: 6rem; }
 
 .team-section__block-element-item-single-photo {
-  height: 15rem;
+  height: 20rem;
   border-radius: 10rem;
   box-sizing: border-box;
   border: solid .5rem white;
   box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26); }
 
 .team-section__block-element-item-double-photo {
-  height: 14rem;
+  height: 18rem;
   border-radius: 10rem;
   box-sizing: border-box;
   border: solid .5rem white;
@@ -946,3 +955,38 @@ html.text-small {
 
 .team-section__block-element-item-description-role-text {
   margin-bottom: .2rem; }
+
+.team-section__block-element-item-double-photo-small {
+  height: 13rem;
+  border-radius: 10rem;
+  box-sizing: border-box;
+  border: solid .5rem white;
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26); }
+
+.team-section__block-element-item-description-small {
+  margin-top: 1rem; }
+
+.team-section__block-element-item-description-small-person {
+  font-weight: 600;
+  font-size: 1.2rem; }
+
+.team-section__block-element-item-description-small-role {
+  margin-top: .5rem;
+  font-size: .8rem; }
+
+.team-section__block-element-item-description-small-role-text {
+  margin-bottom: .2rem; }
+
+@media only screen and (min-width: 0px) and (max-width: 769px) {
+  .team-section__block {
+    margin-bottom: 0rem; }
+  .team-section__block-element {
+    margin-bottom: 0rem !important; }
+  .team-section__block-element:nth-child(2) {
+    margin-top: 0px; }
+  .team-section__block-element-item {
+    margin-bottom: 3rem; }
+  .team-section__block-element-item:first-child {
+    margin-right: 0; }
+  .team-section__block-element-item:last-child {
+    margin-left: 0; } }

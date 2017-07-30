@@ -1,6 +1,6 @@
 .team-section {
-    position: relative;
     margin: 0 auto 0 auto;
+    width: 100%;
 
     &__name {
         width: 100%;
@@ -8,12 +8,12 @@
     }
 
     &__name-brand {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-bottom: 0.3rem;
     }
 
     &__name-title {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 300;
     }
 
@@ -22,9 +22,18 @@
         margin-bottom: 3rem;
 
         &-element {
-
+            width: 100%;
+            
             &:first-child {
                 margin-top: 3rem;
+            }
+
+            &:nth-child(2) {
+                margin-top: -230px;
+            }
+
+            &:last-child {
+                margin-bottom: 3rem;
             }
 
             &-item {
@@ -38,7 +47,7 @@
                 }
 
                 &-single-photo {
-                    height: 15rem;
+                    height: 20rem;
                     border-radius: 10rem;
                     box-sizing: border-box;
                     border: solid .5rem white;
@@ -46,7 +55,7 @@
                 }
 
                 &-double-photo {
-                    height: 14rem;
+                    height: 18rem;
                     border-radius: 10rem;
                     box-sizing: border-box;
                     border: solid .5rem white;
@@ -70,6 +79,60 @@
                         }
                     }
                 }
+
+                &-double-photo-small {
+                    height: 13rem;
+                    border-radius: 10rem;
+                    box-sizing: border-box;
+                    border: solid .5rem white;
+                    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26);
+
+                }
+
+                &-description-small {
+                    margin-top: 1rem;
+
+                    &-person {
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+
+                    &-role {
+                        margin-top: .5rem;
+                        font-size: .8rem;
+
+                        &-text {
+                            margin-bottom: .2rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include responsive(map-get($sizes, 's')) {
+    .team-section__block {
+        margin-bottom: 0rem;
+    }
+
+    .team-section__block-element {
+        margin-bottom: 0rem !important;
+
+        &:nth-child(2) {
+            margin-top: 0px;
+        }
+
+        &-item {
+            margin-bottom: 3rem;
+
+            &:first-child {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-left: 0;
             }
         }
     }
