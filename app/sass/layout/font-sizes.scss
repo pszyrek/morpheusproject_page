@@ -48,7 +48,7 @@ $font-weight-body-1:        300;
 $font-weight-caption:       300;
 $font-weight-label:         300;
 $font-weight-menu:          400;
-$font-weight-button:        400;
+$font-weight-button:        100;
 
 //** Line Height
 $line-height-display-4:     40;
@@ -197,8 +197,6 @@ $font-color-button:         $gray-darker;
 .button {
   @include font($font-size-button, $line-height-button, $letter-spacing-button);
   font-weight: $font-weight-button;
-  color: $font-color-button;
-  text-transform: uppercase;
 }
 
 // Font-size for device

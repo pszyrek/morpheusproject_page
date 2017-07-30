@@ -28,7 +28,9 @@
 
         <section class="main-section vp-height-100vh col-primary flex fj-center-x fa-center-x bg-col-primary">
 
-            <iframe id="main-section__video-player" src="https://www.youtube.com/embed/adwn1MU20RA?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            <div class="player-container">
+                <div id="player"></div>
+            </div>
 
             <div class="main-section__title-container w-12 flex flex-column fa-center">
                 <h1 size-class="S: uppercase, M: test" class="font-primary display-4">MORPHEUS</h1>
@@ -36,7 +38,7 @@
             </div>
 
             <div class="main-section__button-container flex fj-center">
-                <button class="button" onmouseover="showPlayer();" onmouseout="hidePlayer();">watch video</button>
+                <button class="button button__transparent button__bordered col-accent" onmouseover="showPlayer();" onmouseout="hidePlayer();" onclick="playMovie();">watch video</button>
             </div>
         </section>
 
