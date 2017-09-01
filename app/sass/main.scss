@@ -2,6 +2,9 @@
 @import './helpers/reset';
 @import './helpers/mixins/responsive';
 
+// Components
+@import './components/heading';
+
 // Layout
 @import './layout/grid';
 @import './layout/fonts';
@@ -11,7 +14,8 @@
 @import './layout/font-sizes';
 @import './layout/buttons';
 
-// Components
-@import './components/header';
-@import './components/main-section';
-@import './components/team-section';
+// Sections
+@import './sections/header';
+@import './sections/main-section';
+@import './sections/team-section';
+@import './sections/link-section';

@@ -1,3 +1,4 @@
+// PLAYER
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 
@@ -46,3 +47,8 @@ function playMovie() {
     player.unMute()
     playerContainer[0].style.zIndex = '3';
 }
+
+// SCROLL ANIMATION
+window.sr = ScrollReveal();
+
+sr.reveal('.team-section__list-item', { container: '.team-section__list' })
