@@ -1,0 +1,15 @@
+.section-heading {
+        width: 100%;
+        margin-bottom: 20px;
+
+    &__brand {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 3rem;
+    } 
+}

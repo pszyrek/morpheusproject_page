@@ -4,13 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <script async src="https://www.youtube.com/iframe_api"></script>
     </head>
 
     <body class="bg-col-secondary">
-
         <header class="bg-col-w header w-12">
             <div class="box">
                 <div class="header__brand w-3 w-12-s flex fj-start fa-center-x fj-center-s">
@@ -27,107 +26,79 @@
         </header>
 
         <section class="main-section vp-height-100vh col-primary flex fj-center-x fa-center-x bg-col-primary">
-
-            <iframe id="main-section__video-player" src="https://www.youtube.com/embed/adwn1MU20RA?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            <div class="player-container">
+                <div id="player"></div>
+            </div>
 
             <div class="main-section__title-container w-12 flex flex-column fa-center">
-                <h1 size-class="S: uppercase, M: test" class="font-primary display-4">MORPHEUS</h1>
+                <h1 class="font-primary display-4 col-w">MORPHEUS</h1>
                 <p class="col-accent subhead-1">The overcome of fear never been easier</p>
             </div>
 
             <div class="main-section__button-container flex fj-center">
-                <button class="button" onmouseover="showPlayer();" onmouseout="hidePlayer();">watch video</button>
+                <button class="button button__transparent button__bordered col-accent" onmouseover="showPlayer();" onmouseout="hidePlayer();" onclick="playMovie();">watch video</button>
             </div>
         </section>
 
-        <section class="team-section col-quaternary flex flex-column fa-center w-10-x w-12">
-            <div class="team-section__name w-12 flex fj-start-x fj-center">
-                <span class="team-section__name-brand col-tertiary font-primary">
+        <section class="team-section flex flex-column fa-center w-10-x">
+            <div class="section-heading w-12 flex x-fj-start">
+                <span class="section-heading__brand col-tertiary font-primary">
                     MORPHEUS
                 </span>
-                <span class="team-section__name-title col-accent flex fa-end">
+                <span class="section-heading__title col-accent flex fa-end-x">
                     Team
                 </span>
             </div>
-            <div class="team-section__block w-10-x w-12 ">
-                <div class="team-section__block-element flex fj-center">
-                    <div class="team-section__block-element-item flex-column fj-between">
-                        <img class="team-section__block-element-item-single-photo" src="./assets/img/profile_photo_bujna.jpg" alt="profile_photo_bujna">
-                        <div class="team-section__block-element-item-description">
-                            <span class="team-section__block-element-item-description-person flex fj-center fa-center col-quaternary">
-                            Piotr Bujna
-                        </span>
-                            <div class="team-section__block-element-item-description-role flex fj-center fa-center flex-column">
-                                <span class="team-section__block-element-item-description-role-text col-quaternary">
-                                    Project manager
-                                </span>
-                                <span class="team-section__block-element-item-description-role-text col-quaternary">
-                                    Game programmer
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+
+            <ul class="team-section__list flex fj-center">
+                <li class="team-section__list-item">
+                    <img class="team-section__list-item_picture" src="./img/profile_photo_kaj.jpg" alt="profile_photo_bujna">
+                    <h5 class="body-1">Jakub Kaj</h5>
+                    <p class="caption">Game programmer</p>
+                </li>
+                <li class="team-section__list-item">
+                    <img class="team-section__list-item_picture" src="./img/profile_photo_bujna.jpg" alt="profile_photo_bujna">
+                    <h5 class="body-1">Krzysztof Smyczek</h5>
+                    <p class="caption">Project promoter</p>
+                </li>
+                <li class="team-section__list-item">
+                    <img class="team-section__list-item_picture" src="./img/profile_photo_bujna.jpg" alt="profile_photo_bujna">
+                    <h5 class="body-1">Piotr Bujna</h5>
+                    <p class="caption">Project Manager</p>
+                    <p class="caption">Game programmer</p>
+                </li>
+                <li class="team-section__list-item">
+                    <img class="team-section__list-item_picture" src="./img/profile_photo_lasak.jpg" alt="profile_photo_bujna">
+                    <h5 class="body-1">Marcin Lasak</h5>
+                    <p class="caption">Project promoter</p>
+                </li>
+                <li class="team-section__list-item">
+                    <img class="team-section__list-item_picture" src="./img/profile_photo_osiak.jpg" alt="profile_photo_bujna">
+                    <h5 class="body-1">Damian Osiak</h5>
+                    <p class="caption">Game artist</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bg-col-primary">
+            <div class="link-section w-10">
+                <div class="section-heading w-12 flex x-fj-start">
+                    <span class="section-heading__brand col-w font-primary">
+                        MORPHEUS
+                    </span>
+                    <span class="section-heading__title col-accent flex fa-end-x">
+                        Link
+                    </span>
                 </div>
-                <div class="team-section__block-element flex fj-between flex-column-s fj-center-s fa-center-s">
-                    <div class="team-section__block-element-item flex-column fj-between ">
-                        <img class="team-section__block-element-item-double-photo" src="./assets/img/profile_photo_kaj.jpg" alt="profile_photo_bujna">
-                        <div class="team-section__block-element-item-description">
-                            <span class="team-section__block-element-item-description-person flex fj-center fa-center col-quaternary">
-                            Jakub Kaj
-                        </span>
-                            <div class="team-section__block-element-item-description-role flex fj-center fa-center flex-column">
-                                <span class="team-section__block-element-item-description-role-text col-quaternary">
-                                    Game programmer
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-section__block-element-item flex-column fj-between">
-                        <img class="team-section__block-element-item-double-photo" src="./assets/img/profile_photo_osiak.jpg" alt="profile_photo_bujna">
-                        <div class="team-section__block-element-item-description">
-                            <span class="team-section__block-element-item-description-person flex fj-center fa-center col-quaternary">
-                            Damian Osiak
-                        </span>
-                            <div class="team-section__block-element-item-description-role flex fj-center fa-center flex-column">
-                                <span class="team-section__block-element-item-description-role-text col-quaternary">
-                                    Game artist
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-section__block-element flex fj-center flex-column-s fj-center-s fa-center-s">
-                    <div class="team-section__block-element-item flex-column fj-between">
-                        <img class="team-section__block-element-item-double-photo-small" src="./assets/img/profile_photo_smyczek.jpg" alt="profile_photo_bujna">
-                        <div class="team-section__block-element-item-description-small">
-                            <span class="team-section__block-element-item-description-small-person flex fj-center fa-center col-quaternary">
-                            Krzysztof Smyczek
-                        </span>
-                            <div class="team-section__block-element-item-description-small-role flex fj-center fa-center flex-column">
-                                <span class="team-section__block-element-item-description-small-role-text col-quaternary">
-                                    Project promoter
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-section__block-element-item flex-column fj-between">
-                        <img class="team-section__block-element-item-double-photo-small" src="./assets/img/profile_photo_lasak.jpg" alt="profile_photo_bujna">
-                        <div class="team-section__block-element-item-description-small">
-                            <span class="team-section__block-element-item-description-small-person flex fj-center fa-center col-quaternary">
-                            Marcin Lasak
-                        </span>
-                            <div class="team-section__block-element-item-description-small-role flex fj-center fa-center flex-column">
-                                <span class="team-section__block-element-item-description-small-role-text col-quaternary">
-                                    Project promoter
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
         </section>
 
-        <script src="assets/scripts/main.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="scripts/main.js"></script>
+
     </body>
 
 </html>

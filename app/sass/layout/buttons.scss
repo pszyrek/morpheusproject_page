@@ -1,0 +1,21 @@
+.button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &__transparent {
+        background-color: rgba(0, 0, 0, 0);
+        transition: all .3s ease;
+
+        &:hover {
+            transition: all .3s ease;
+            background-color: map-get($colors, 'w');
+            color: map-get($colors, 'primary');
+        }
+    }
+
+    &__bordered {
+        border: 1px solid map-get($colors, 'w');
+    }
+}

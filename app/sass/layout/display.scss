@@ -3,6 +3,7 @@
 @import '../helpers/mixins/responsive';
 
 .vp-height-100vh        {min-height: 100vh;}
+.block                  {display: block;}
 
 @include display(null);
 
