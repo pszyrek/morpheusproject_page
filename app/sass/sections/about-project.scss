@@ -1,0 +1,14 @@
+.about-project {
+    padding: 3rem 0 3rem 0;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+    }
+
+    &__description {
+        text-align: center;
+        line-height: 2rem;
+    }
+}

@@ -1,7 +1,7 @@
 @import '../helpers/variables';
 
 .header {
-    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26);
+    background-color: transparent;
     position: fixed;
     top: 0;
     right: 0;
@@ -16,14 +16,16 @@
         margin: 1.2rem 1rem 1.2rem 5rem;
     }
 
+    &__navbar {
+        padding-top: 1.5rem;
+    }
+
     &__navbar-item {
         font-weight: 400;
-        height: 100%;
-        width: 100%;
         transition: all ease .3s;
         
         &:hover {
-            background: #E9E9E9;
+            color: #24bae2;
             transition: all ease .3s;
         }
     }

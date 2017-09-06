@@ -61,7 +61,7 @@ $line-height-subhead-2:     28;
 $line-height-subhead-1:     24;
 $line-height-body-2:        24;
 $line-height-body-1:        20;
-$line-height-caption:       4;
+$line-height-caption:       10;
 $line-height-label:         20;
 $line-height-menu:          20;
 $line-height-button:        20;
@@ -228,5 +228,5 @@ $font-color-button:         $gray-darker;
 
 .headline, .title, .subhead-2, .subhead-1, .body-2, .body-1, .caption, .label, .menu, .button {
   margin: 0 0 $line-height-body-1/2+0px 0;
-  margin-bottom: $line-height-body-1/20+0rem;
+  margin-bottom: $line-height-body-1/50+0rem;
 }
