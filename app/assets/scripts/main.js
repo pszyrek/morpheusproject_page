@@ -1,0 +1,1 @@
+console.log("dupa"),window.addEventListener("scroll",function(){console.log(this),this.pageYOffset>=100?document.getElementById("header").classList.add("bg-col-tertiary"):document.getElementById("header").classList.remove("bg-col-tertiary")});

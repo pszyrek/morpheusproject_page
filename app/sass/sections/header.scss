@@ -1,12 +1,12 @@
 @import '../helpers/variables';
 
 .header {
-    background-color: transparent;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 5;
+    transition: all ease 0.5s;
 
     &__brand {
         font-size: 2rem;
@@ -17,15 +17,18 @@
     }
 
     &__navbar {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
     }
 
     &__navbar-item {
         font-weight: 400;
+        width: 100%;
+        height: 100%;
         transition: all ease .3s;
         
         &:hover {
             color: #24bae2;
+            background: #5a5a5a;
             transition: all ease .3s;
         }
     }
