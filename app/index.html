@@ -26,8 +26,8 @@
         </header>
 
         <section class="main-section vp-height-100vh bg-col-primary-alpha col-primary flex fj-center-x fa-center-x flex-column-x">
-            <div class="player-container">
-                <iframe id="player" width='560' height='315' src="https://www.youtube.com/embed/adwn1MU20RA?autoplay=1&loop=1&mute=1&theme=dark&color=white&keyboard=1&autohide=1&controls=0&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+            <div class="player-container bg-col-primary">
+                <!-- <iframe id="player" width='560' height='315' src="https://www.youtube.com/embed/adwn1MU20RA?autoplay=1&loop=1&mute=1&theme=dark&color=white&keyboard=1&autohide=1&controls=0&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe> -->
             </div>
 
             <div class="main-section__title-container w-12 flex flex-column fa-center">
@@ -49,7 +49,7 @@
             </div>
         </section>
 
-        <section class="bg-col-primary">
+        <section class="bg-col-tertiary">
             <div class="link-section w-8">
                 <div class="section-heading flex fj-center">
                     <span class="section-heading__brand col-w font-primary">
@@ -105,17 +105,110 @@
             </div>
         </section>
 
-        <section class="team-section flex flex-column fa-center w-10-x">
-            <div class="section-heading flex">
-                <span class="section-heading__brand col-tertiary font-primary">
+        <section class="bg-col-tertiary">
+            <div class="handle-section w-10">
+                <div class="section-heading flex fj-center">
+                    <span class="section-heading__brand font-primary col-w">MORPHEUS</span>
+                    <span class="section-heading__title col-accent">Handle</span>
+                </div>
+                <div class="handle-section__carousel">
+                    <div class="arrow-backward arrow w-1">
+                        <img src="./img/icons/forward-arrow-white.png" alt="">
+                    </div>
+                    <div class="handle-section__carousel-content w-5 bg-col-w">
+                        <div class="stepdisplay" id="step_display"></div>
+                        <div class="step" id="step_0">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step13.png">
+                            </div>
+                        </div>
+                        <!-- <div class="step" id="step_1">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step1.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_2">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step2.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_3">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step3.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_4">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step4.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_5">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step5.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_6">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step6.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_7">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step7.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_8">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step8.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_9">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step9.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_10">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step10.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_11">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step11.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_12">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step12.png">
+                            </div>
+                        </div>
+                        <div class="step" id="step_13">
+                            <div class="photo">
+                                <img src="./img/lego-creators/step13.png">
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="handle-section__carousel-content w-4 bg-col-w">
+
+                    </div>
+                    <div class="arrow-forward arrow w-1">
+                        <img src="./img/icons/forward-arrow-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section bg-col-accent flex flex-column fa-center w-12-x">
+            <div class="section-heading flex fj-center">
+                <span class="section-heading__brand col-w font-primary">
                     MORPHEUS
                 </span>
-                <span class="section-heading__title col-accent">
+                <span class="section-heading__title col-tertiary">
                     Team
                 </span>
             </div>
 
-            <ul class="team-section__list flex fj-center">
+            <!-- <ul class="team-section__list flex fj-center">
                 <li class="team-section__list-item">
                     <img class="team-section__list-item_picture" src="./img/profile_photo_kaj.jpg" alt="profile_photo_bujna">
                     <h5 class="body-1">Jakub Kaj</h5>
@@ -142,7 +235,7 @@
                     <h5 class="body-1">Damian Osiak</h5>
                     <p class="caption">Game artist</p>
                 </li>
-            </ul>
+            </ul> -->
         </section>
 
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

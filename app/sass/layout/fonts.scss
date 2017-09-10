@@ -4,6 +4,15 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+}
+
 .font-primary {
     font-family: 'Lombok';
+}
+
+.font-secondary {
+    font-family: 'Open Sans';
 }
