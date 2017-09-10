@@ -1,5 +1,3 @@
-console.log("dupa");
-
 window.addEventListener('scroll', function (item) {
     var scroll = this.pageYOffset;
     if (scroll >= 100) {
@@ -30,6 +28,26 @@ window.addEventListener('scroll', function (item) {
             tabs[i].classList.remove("hidden-tab");
         }
     }
-
-    console.log(scroll);
 });
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("step");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "flex";
+}

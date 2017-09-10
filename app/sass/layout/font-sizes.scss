@@ -11,6 +11,8 @@ $gray:                   #bdbdbd; // #bdbdbd - hint text
 $gray-light:             #e0e0e0; // #e0e0e0 - divider
 $gray-lighter:           #f5f5f5; // #f5f5f5 - background
 
+$accent:                 #24bae2;
+
 //** Typographic Scale
 
 $font-size-display-4:       82;
@@ -88,8 +90,8 @@ $font-color-title:          $gray-darker;
 $font-color-subhead-2:      $gray-darker;
 $font-color-subhead-1:      $gray-darker;
 $font-color-body-2:         $gray-darker;
-$font-color-body-1:         $gray-darker;
-$font-color-caption:        $gray-dark;
+$font-color-body-1:         $gray-lighter;
+$font-color-caption:        $accent;
 $font-color-label:          $gray-darker;
 $font-color-menu:           $gray-darker;
 $font-color-button:         $gray-darker;
