@@ -13,11 +13,7 @@
     }
 
     &__logo {
-        margin: 1.2rem 1rem 1.2rem 5rem;
-    }
-
-    &__navbar {
-        padding-top: 1rem;
+        padding: 1rem 0 1rem 5rem;
     }
 
     &__navbar-item {
@@ -28,9 +24,12 @@
         
         &:hover {
             color: #24bae2;
-            background: #5a5a5a;
             transition: all ease .3s;
         }
+    }
+
+    .bg-item:hover {
+        background: #455a64;
     }
 }
 
