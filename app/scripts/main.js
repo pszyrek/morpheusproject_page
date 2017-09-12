@@ -17,6 +17,7 @@ window.addEventListener('scroll', function (item) {
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.link-section__container__tab', 300);
+sr.reveal('.team-section__list-item__tab', 300);
 
 var slideIndex = 1;
 showSlides(slideIndex);

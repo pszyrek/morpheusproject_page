@@ -9,31 +9,53 @@
     &__list-item {
         text-align: center;
 
-        &:nth-child(2),
+        &:nth-child(1) {
+            order: 3;
+        }
+        &:nth-child(2) {
+            order: 2;
+        }
+        &:nth-child(3) {
+            order: 4;
+        }
         &:nth-child(4) {
-            margin-top: 360px;
+            order: 1;
+        }
+        &:nth-child(5) {
+            order: 5;
         }
 
-        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin: 4rem 0 0 0;
+        }
+
+        &:nth-child(4),
         &:nth-child(5) {
-            margin-top: 80px;
+            margin: 7rem 0 0 0;
+        }
+
+        &__tab {
+            position: relative;
+            padding: 0 0 1rem 0;
+            margin: 1rem;
+            background: white;
+            border-radius: .2rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            bottom: 0px;
+            cursor: pointer;
+        }
+
+        &__tab:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            bottom: 10px;
         }
 
         &_picture {
             margin-bottom: 10px;
             height: 15rem;
-            border-radius: 10rem;
-            box-sizing: border-box;
-            border: solid .5rem white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-
-            :nth-child(3) & {
-                height: 17rem;
-            }
-        }
-        &_picture:hover {
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
     }
 }

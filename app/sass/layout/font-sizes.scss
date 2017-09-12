@@ -8,7 +8,7 @@ html.text-small {
 $gray-darker:            #212121; // #212121 - text
 $gray-dark:              #757575; // #757575 - secondary text, icons
 $gray:                   #bdbdbd; // #bdbdbd - hint text
-$gray-light:             #e0e0e0; // #e0e0e0 - divider
+$gray-light:             #455a64; // #e0e0e0 - divider
 $gray-lighter:           #f5f5f5; // #f5f5f5 - background
 
 $accent:                 #24bae2;
@@ -24,8 +24,8 @@ $font-size-title:           20;
 $font-size-subhead-2:       15;
 $font-size-subhead-1:       15;
 $font-size-body-2:          13;
-$font-size-body-1:          13;
-$font-size-caption:         10;
+$font-size-body-1:          12;
+$font-size-caption:         8;
 $font-size-label:           12;
 $font-size-menu:            13;
 $font-size-button:          12;
@@ -46,7 +46,7 @@ $font-weight-title:         400;
 $font-weight-subhead-2:     400;
 $font-weight-subhead-1:     300;
 $font-weight-body-2:        400;
-$font-weight-body-1:        300;
+$font-weight-body-1:        400;
 $font-weight-caption:       300;
 $font-weight-label:         300;
 $font-weight-menu:          400;
@@ -63,7 +63,7 @@ $line-height-subhead-2:     28;
 $line-height-subhead-1:     24;
 $line-height-body-2:        24;
 $line-height-body-1:        20;
-$line-height-caption:       10;
+$line-height-caption:       8;
 $line-height-label:         20;
 $line-height-menu:          20;
 $line-height-button:        20;
@@ -90,8 +90,8 @@ $font-color-title:          $gray-darker;
 $font-color-subhead-2:      $gray-darker;
 $font-color-subhead-1:      $gray-darker;
 $font-color-body-2:         $gray-darker;
-$font-color-body-1:         $gray-lighter;
-$font-color-caption:        $accent;
+$font-color-body-1:         $gray-darker;
+$font-color-caption:        $gray-light;
 $font-color-label:          $gray-darker;
 $font-color-menu:           $gray-darker;
 $font-color-button:         $gray-darker;
