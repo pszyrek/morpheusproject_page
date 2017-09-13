@@ -1,14 +1,32 @@
+$(document).ready(function () {
+    $("#link-section-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#link-section").offset().top - 64
+        }, 2000);
+    });
+    $("#about-project-section-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#about-section").offset().top - 64
+        }, 2000);
+    });
+    $("#team-section-button").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#team-section").offset().top - 64
+        }, 2000);
+    });
+});
+
 window.addEventListener('scroll', function (item) {
     var scroll = this.pageYOffset;
     var navItems = document.getElementsByClassName('header__navbar-item');
 
     if (scroll >= 100) {
-        document.getElementById("header").classList.add("bg-col-tertiary");
+        document.getElementById("header").classList.add("bg-header");
         for (var i = 0; i < navItems.length; i++) {
             navItems[i].classList.add('bg-item');
         }
     } else {
-        document.getElementById("header").classList.remove("bg-col-tertiary");
+        document.getElementById("header").classList.remove("bg-header");
         for (var i = 0; i < navItems.length; i++) {
             navItems[i].classList.remove('bg-item');
         }

@@ -13,18 +13,18 @@
     </head>
 
     <body class="bg-col-secondary">
-        <header id="header" class="header w-12">
-            <div class="box">
-                <div class="header__brand w-3 w-12-s flex fj-start fa-center-x fj-center-s">
-                    <a href="#" class="col-w font-primary header__logo">MORPHEUS</a>
-                </div>
-                <div class="w-3 w-12-s"></div>
-                <div class="header__navbar flex w-6 w-12-s fj-around-x fa-center-x fj-center-s">
-                    <a class="header__navbar-item flex fj-center fa-center col-w" href="#">About project</a>
-                    <a class="header__navbar-item flex fj-center fa-center col-w" href="#">Technologies</a>
-                    <a class="header__navbar-item flex fj-center fa-center col-w" href="#">Support</a>
-                    <a class="header__navbar-item flex fj-center fa-center col-w" href="#">About us</a>
-                </div>
+        <header id="header" class="header w-12-x w-1-s">
+            <div class="header__brand w-3-x flex fj-start fa-center-x">
+                <a href="#" class="col-w font-primary header__logo">MORPHEUS</a>
+                <a href="#" class="col-w font-primary header__logo-short">M</a>
+            </div>
+            <div class="w-3-x w-0-s"></div>
+            <div class="header__navbar flex w-6-x fj-around-x fa-center-x">
+                <a id="about-project-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">About project</a>
+                <a id="link-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">Technologies</a>
+                <a id="support-section" class="header__navbar-item flex fj-center fa-center col-w" href="#">Support</a>
+                <a id="team-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">About us</a>
+                <i class="header__navbar-item__mobile fa fa-user-circle" aria-hidden="true"></i>
             </div>
         </header>
 
@@ -43,7 +43,7 @@
             </div>
         </section>
 
-        <section class="about-project w-12 flex fa-center-x flex-column">
+        <section id="about-section" class="about-project w-12 flex fa-center-x flex-column">
             <div class="about-project__title flex fj-center col-accent">
                 About Project
             </div>
@@ -52,7 +52,7 @@
             </div>
         </section>
 
-        <section class="bg-col-tertiary">
+        <section id="link-section" class="bg-col-tertiary">
             <div class="link-section w-8">
                 <div class="section-heading flex fj-center">
                     <span class="section-heading__brand col-w font-primary">
@@ -207,7 +207,7 @@
             </div>
         </section>
 
-        <section class="team-section bg-col-primary flex flex-column fa-center w-12-x">
+        <section id="team-section" class="team-section bg-col-primary flex flex-column fa-center w-12-x">
             <div class="section-heading flex fj-center">
                 <span class="section-heading__brand col-w font-primary">
                     MORPHEUS
@@ -257,6 +257,7 @@
             </ul>
         </section>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="scripts/main.js"></script>
 
