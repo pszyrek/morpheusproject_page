@@ -1,6 +1,7 @@
 @mixin display($size) {
 
     @if $size == null {
+        .flex-wrap             {flex-wrap: wrap;};
         .flex                           {display: flex};
         .flex-column                    {flex-direction: column;};
         .fj-between                     {justify-content: space-between};
@@ -11,6 +12,7 @@
         .fa-center                      {align-items: center;}
         .fa-end                         {align-items: flex-end};
     } @else {
+        .flex-wrap-#{$size}             {flex-wrap: wrap;};
         .flex-column-#{$size}           {flex-direction: column;};
         .fj-between-#{$size}            {justify-content: space-between};
         .fj-around-#{$size}             {justify-content: space-around};

@@ -2,20 +2,10 @@
     margin: 0 auto;
     padding: 40px 0 40px 0;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     &__container__tab {
         position: relative;
         overflow: hidden;
         transform: scale(0);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background: white;
         height: 500px;
         width: 30%;
@@ -50,5 +40,16 @@
     .hidden-tab {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@include responsive(map-get($sizes, 's')) {
+    .link-section__container__tab {
+        width: 100%;
+        height: 400px;
+
+        .bottom {
+            width: 90%;
+        }
     }
 }

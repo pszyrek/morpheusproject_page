@@ -21,3 +21,10 @@
 @import './sections/link-section';
 @import './sections/about-project';
 @import './sections/handle-section';
+
+
+@include responsive(map-get($sizes, 's')) {
+    .page-content {
+        margin-left: 16.66667%;
+    }
+}
