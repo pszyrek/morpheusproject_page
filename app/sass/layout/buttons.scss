@@ -3,19 +3,25 @@
     padding-right: 2rem;
     text-transform: uppercase;
     cursor: pointer;
-
+    box-sizing: border-box;
     &__transparent {
         background-color: rgba(0, 0, 0, 0);
         transition: all .3s ease;
-
         &:hover {
             transition: all .3s ease;
             background-color: map-get($colors, 'w');
             color: map-get($colors, 'primary');
         }
     }
-
     &__bordered {
         border: 1px solid map-get($colors, 'w');
+    }
+}
+
+@include responsive(map-get($sizes, 's')) {
+    .button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
     }
 }

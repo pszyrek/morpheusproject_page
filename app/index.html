@@ -8,39 +8,36 @@
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="./styles/font-awesome.min.css">
-
-        <script async src="https://www.youtube.com/iframe_api"></script>
     </head>
 
     <body class="bg-col-secondary">
-        <header id="header" class="header flex flex-column-s flex-between-s w-12-x w-2-s">
-            <div class="header__brand w-3-x flex fa-center-x fj-center-s">
+
+        <header id="header" class="header flex flex-column-s w-12">
+            <div id="header__brand" class="header__brand w-3 w-12-s flex fa-center fj-center">
                 <a href="#" class="col-w font-primary header__logo">MORPHEUS</a>
-                <a href="#" class="col-w font-primary header__logo-short">M</a>
             </div>
-            <div class="w-3-x w-0-s"></div>
-            <div class="header__navbar flex w-6-x fj-around-x fa-center-x flex-column-s fa-center-s fj-end-s">
+            <div class="w-off-3 "></div>
+            <div id="header__navbar" class="header__navbar flex w-6 w-12-s fj-around fa-center">
                 <a id="about-project-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">About project</a>
                 <a id="link-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">Technologies</a>
                 <a id="support-section" class="header__navbar-item flex fj-center fa-center col-w" href="#">Support</a>
                 <a id="team-section-button" class="header__navbar-item flex fj-center fa-center col-w" href="#">About us</a>
-                <i class="header__navbar-item__mobile fa fa-user-circle" aria-hidden="true"></i>
             </div>
         </header>
 
-        <section class="page-content w-12-s">
-            <div class="main-section w-12-s vp-height-100vh bg-col-primary-alpha col-primary flex fj-center fa-center flex-column">
+        <section class="page-content w-12">
+            <div class="main-section w-12 vp-height-100vh bg-col-primary-alpha col-primary flex fj-center fa-center flex-column">
                 <div class="player-container bg-col-primary">
                     <iframe id="player" width='560' height='315' src="https://www.youtube.com/embed/adwn1MU20RA?autoplay=1&loop=1&mute=1&theme=dark&color=white&keyboard=1&autohide=1&controls=0&modestbranding=1&fs=0&showinfo=0&rel=0&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
                 </div>
 
-                <div class="main-section__title-container w-12-x w-12-s flex flex-column fa-center">
+                <div class="main-section__title-container w-12 w-12-s flex flex-column fa-center">
                     <h1 class="font-primary col-w">MORPHEUS</h1>
                     <p class="col-accent">The overcome of fear never been easier</p>
                 </div>
 
                 <div class="main-section__button-container flex fj-center">
-                    <button class="button button__transparent button__bordered col-accent" onmouseover="showPlayer();" onmouseout="hidePlayer();" onclick="playMovie();">watch video</button>
+                    <a href="https://www.youtube.com/watch?v=adwn1MU20RA" class="button button__transparent button__bordered col-accent">watch video</a>
                 </div>
             </div>
 
@@ -54,7 +51,7 @@
             </div>
 
             <div id="link-section" class="bg-col-tertiary w-12">
-                <div class="link-section w-8 w-10-s flex-column-s">
+                <div class="link-section w-8-x w-11-m w-10-s flex-column-s">
                     <div class="section-heading flex fj-center">
                         <span class="section-heading__brand col-w font-primary">
                         MORPHEUS
@@ -64,7 +61,7 @@
                     </span>
                     </div>
 
-                    <div class="link-section__container w-12-s flex fj-between-x flex-row-x flex-wrap flex-column-s">
+                    <div class="link-section__container w-12-s flex fj-between flex-row flex-wrap flex-column-s">
                         <div class="link-section__container__tab">
                             <div class="link-section__container__tab__property">
                                 <img src="./img/gearvr-logo.png">
@@ -115,11 +112,11 @@
                         <span class="section-heading__brand font-primary col-w">MORPHEUS</span>
                         <span class="section-heading__title col-accent">Handle</span>
                     </div>
-                    <div class="handle-section__carousel flex flex-row-x fj-around-x fa-center-x flex-column-s">
-                        <div class="arrow flex fj-center">
-                            <i class="fa fa-arrow-left" aria-hidden="true" onclick="plusSlides(-1)"></i>
-                        </div>
-                        <div class="handle-section__carousel-content flex fj-center w-5-x w-12-s bg-col-w">
+                    <div class="handle-section__carousel w-10 flex flex-row-x fj-around-x fa-center-x flex-column-s">
+                        <div class="handle-section__carousel-content flex fj-center w-6 w-12-s bg-col-w">
+                            <div class="arrow flex fa-center">
+                                <i class="fa fa-arrow-left" aria-hidden="true" onclick="plusSlides(-1)"></i>
+                            </div>
                             <div class="stepdisplay" id="step_display"></div>
                             <div class="step" id="step_0">
                                 <div class="photo">
@@ -191,24 +188,25 @@
                                     <img src="./img/lego-creators/step13.png">
                                 </div>
                             </div>
+
+                            <div class="arrow flex fa-center">
+                                <i class="fa fa-arrow-right" aria-hidden="true" onclick="plusSlides(1)"></i>
+                            </div>
                         </div>
                         <div class="handle-section__carousel-content second-tab flex flex-column fj-around fa-center w-5-x w-12-s bg-col-w">
                             <img src="./img/gearvr-handle.png">
                             <div class="description flex fj-center fa-center flex-column">
                                 <span class="description-title">LEAPMOTION CUSTOM HANDLE</span>
-                                <div class="description-text w-10-s flex fj-center fa-center ">
+                                <div class="description-text w-105 flex fj-center fa-center ">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut metus risus. Nam sodales suscipit vestibulum. Pellentesque porttitor tellus eget risus imperdiet rutrum. In hac habitasse platea dictumst. Pellentesque ornare velit congue maximus scelerisque.
                                 </div>
                             </div>
-                        </div>
-                        <div class="arrow">
-                            <i class="fa fa-arrow-right" aria-hidden="true" onclick="plusSlides(1)"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="team-section" class="team-section bg-col-primary flex flex-column fa-center w-12-x w-12-s">
+            <div id="team-section" class="team-section bg-col-primary flex flex-column fa-center w-12">
                 <div class="section-heading flex fj-center">
                     <span class="section-heading__brand col-w font-primary">
                     MORPHEUS
@@ -218,7 +216,7 @@
                 </span>
                 </div>
 
-                <ul class="team-section__list flex fj-center w-12-s flex-column-s">
+                <ul class="team-section__list flex fj-center w-12 flex-column-s">
                     <li class="team-section__list-item">
                         <div class="team-section__list-item__tab">
                             <img class="team-section__list-item_picture" src="./img/profile_photo_bujna.jpg" alt="profile_photo_bujna">

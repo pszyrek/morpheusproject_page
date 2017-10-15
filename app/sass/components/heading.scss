@@ -1,33 +1,29 @@
 .section-heading {
-        width: 100%;
-        margin-bottom: 2rem;
-
+    width: 100%;
+    margin-bottom: 2rem;
     &__brand {
         font-size: 3rem;
         line-height: 3rem;
     }
-
     &__title {
         font-size: 2rem;
         font-weight: 300;
-        line-height: 4.5rem;
-    } 
+        line-height: 3rem;
+    }
 }
 
 @include responsive(map-get($sizes, 's')) {
     .section-heading {
         margin: 0px;
         padding-top: 1rem;
-
         &__brand {
-        font-size: 2.5rem;
-        line-height: 3rem;  
+            font-size: 2.5rem;
+            line-height: 3rem;
         }
-
         &__title {
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 4.5rem;
-        } 
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 4.5rem;
+        }
     }
 }

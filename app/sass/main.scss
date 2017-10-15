@@ -1,10 +1,8 @@
 // Helpers
 @import './helpers/reset';
 @import './helpers/mixins/responsive';
-
 // Components
 @import './components/heading';
-
 // Layout
 @import './layout/grid';
 @import './layout/fonts';
@@ -13,7 +11,6 @@
 @import './layout/display';
 @import './layout/font-sizes';
 @import './layout/buttons';
-
 // Sections
 @import './sections/header';
 @import './sections/main-section';
@@ -21,10 +18,3 @@
 @import './sections/link-section';
 @import './sections/about-project';
 @import './sections/handle-section';
-
-
-@include responsive(map-get($sizes, 's')) {
-    .page-content {
-        margin-left: 16.66667%;
-    }
-}
