@@ -1,4 +1,9 @@
 @import '../variables';
+@mixin responsiveLandscape($size-value) {
+    @media only screen and (min-width: nth($size-value, 1)) and (max-width: nth($size-value, 2)) and (orientation: landscape) {
+        @content;
+    }
+}
 
 @mixin responsive($size-value) {
     @media only screen and (min-width: nth($size-value, 1)) and (max-width: nth($size-value, 2)) {

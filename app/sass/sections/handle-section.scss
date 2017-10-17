@@ -49,30 +49,3 @@
 		}
 	}
 }
-
-@include responsive(map-get($sizes, 's')) {
-	.handle-section {
-		padding: 0px;
-		&__carousel {
-			padding: 0px;
-		}
-		&__carousel-content {
-			height: 400px;
-			margin-top: 1rem;
-			.description-title {
-				font-size: .9rem;
-			}
-			.description-text {
-				font-size: .8rem;
-			}
-		}
-	}
-}
-
-@include responsive(map-get($sizes, 'm')) {
-	.handle-section {
-		&__carousel-content {
-			border-radius: 0;
-		}
-	}
-}

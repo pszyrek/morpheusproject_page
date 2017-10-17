@@ -6,16 +6,6 @@
     left: 0;
     z-index: 5;
     background: #151515;
-    transition: all ease 0.5s;
-    &__brand {
-        font-size: 2rem;
-    }
-    &__logo {
-        padding: 1rem 0 1rem 5rem;
-        &-short {
-            display: none;
-        }
-    }
     &__navbar-item {
         font-weight: 400;
         width: 100%;
@@ -28,31 +18,5 @@
     }
     .bg-item:hover {
         background: #455a64;
-    }
-}
-
-@include responsive(map-get($sizes, 's')) {
-    .header {
-        position: fixed;
-        &__brand {
-            background: #151515;
-        }
-        &__logo {
-            padding: 1rem 0 1rem 0;
-            &-short {
-                display: block;
-                padding: .5rem 0 0 0;
-                font-size: 3rem;
-            }
-        }
-        &__navbar {
-            height: 100%;
-            font-size: .6rem;
-            transition: all ease 1s;
-            background: #151515;
-        }
-        &__navbar-item {
-            padding: .5rem;
-        }
     }
 }

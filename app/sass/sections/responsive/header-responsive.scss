@@ -1,0 +1,66 @@
+@include responsive(map-get($sizes, 's')) {
+    .header {
+        &__brand {
+            font-size: 2rem;
+            padding: 1rem 0 0 0;
+        }
+        &__navbar {
+            padding: .5rem 0 .5rem 0;
+        }
+        &__navbar-item {
+            font-size: .6rem;
+            padding: .5rem 0 .5rem 0;
+        }
+    }
+}
+
+@include responsiveLandscape(map-get($sizes, 's')) {
+    .header__navbar-item {
+        font-size: .8rem;
+    }
+}
+
+@include responsive(map-get($sizes, 'm')) {
+    .header {
+        &__navbar-item {
+            font-size: 1rem;
+            padding: 1.5rem 0 1.5rem 0;
+        }
+        &__brand {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include responsiveLandscape(map-get($sizes, 'm')) {
+    .header {
+        &__navbar-item {
+            padding: 1.5rem 0 1.5rem 0;
+        }
+        &__brand {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include responsive(map-get($sizes, 'l')) {
+    .header {
+        &__navbar-item {
+            padding: 1.5rem 0 1.5rem 0;
+        }
+        &__brand {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include responsive(map-get($sizes, 'x')) {
+    .header {
+        &__brand {
+            font-size: 2rem;
+        }
+        &__logo {
+            padding: 1rem 0 1rem 5rem;
+        }
+    }
+}

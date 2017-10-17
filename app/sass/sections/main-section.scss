@@ -35,21 +35,3 @@
             margin-top: 2rem;
         }
     }
-
-    @include responsive(map-get($sizes, 's')) {
-        .main-section {
-            background: #0e1422;
-            .player-container {
-                display: none;
-            }
-            &__title-container {
-                h1 {
-                    font-size: 3rem;
-                }
-                p {
-                    margin: 0px;
-                    font-size: .8rem;
-                }
-            }
-        }
-    }

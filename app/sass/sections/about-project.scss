@@ -12,21 +12,3 @@
         line-height: 2rem;
     }
 }
-
-@include responsive(map-get($sizes, 's')) {
-    .about-project {
-    
-        &__title {
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 3rem;
-        }
-    
-        &__description {
-            margin: auto;
-            text-align: center;
-            line-height: 1.5rem;
-            width: 100%;
-        }
-    }
-}

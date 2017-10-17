@@ -4,7 +4,6 @@
     &__container__tab {
         position: relative;
         overflow: hidden;
-        transform: scale(0);
         background: white;
         height: 500px;
         width: 30%;
@@ -37,15 +36,3 @@
         transform: scale(1);
     }
 }
-
-@include responsive(map-get($sizes, 's')) {
-    .link-section__container__tab {
-        width: 100%;
-        height: 400px;
-        .bottom {
-            width: 90%;
-        }
-    }
-}
-
-@include responsive(map-get($sizes, 'm')) {}

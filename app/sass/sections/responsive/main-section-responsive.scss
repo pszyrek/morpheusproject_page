@@ -1,0 +1,53 @@
+@include responsive(map-get($sizes, 's')) {
+    .main-section {
+        background: #0e1422;
+        &__title-container {
+            h1 {
+                font-size: 3.5rem;
+            }
+            p {
+                font-size: .9rem;
+                margin: 0px;
+            }
+        }
+    }
+    .player-container {
+        display: none;
+    }
+}
+
+@include responsive(map-get($sizes, 'm')) {
+    .main-section {
+        background: #0e1422;
+        &__title-container {
+            h1 {
+                font-size: 6rem;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
+    .player-container {
+        display: none;
+    }
+}
+
+@include responsive(map-get($sizes, 'l')) {
+    .main-section {
+        background: #0e1422;
+        &__title-container {
+            h1 {
+                font-size: 6rem;
+            }
+            p {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+        }
+    }
+    .player-container {
+        display: none;
+    }
+}

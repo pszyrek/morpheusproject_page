@@ -1,34 +1,8 @@
 .team-section {
     margin: 0 auto;
     padding: 40px 0 40px 0;
-    &__list {
-        margin: 2rem 0 2rem 0;
-    }
     &__list-item {
         text-align: center;
-        &:nth-child(1) {
-            order: 3;
-        }
-        &:nth-child(2) {
-            order: 2;
-        }
-        &:nth-child(3) {
-            order: 4;
-        }
-        &:nth-child(4) {
-            order: 1;
-        }
-        &:nth-child(5) {
-            order: 5;
-        }
-        &:nth-child(2),
-        &:nth-child(3) {
-            margin: 4rem 0 0 0;
-        }
-        &:nth-child(4),
-        &:nth-child(5) {
-            margin: 7rem 0 0 0;
-        }
         &__tab {
             position: relative;
             padding: 0 0 1rem 0;
@@ -38,7 +12,6 @@
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-            bottom: 0px;
             cursor: pointer;
         }
         &__tab:hover {
@@ -48,56 +21,6 @@
         &_picture {
             margin-bottom: 10px;
             height: 15em;
-        }
-    }
-}
-
-@include responsive(map-get($sizes, 's')) {
-    .team-section {
-        &__list-item {
-            .body-1 {
-                font-size: 1.3rem;
-            }
-            .caption {
-                font-size: 1rem;
-            }
-            &:nth-child(1) {
-                order: 1;
-            }
-            &:nth-child(2) {
-                order: 2;
-            }
-            &:nth-child(3) {
-                order: 3;
-            }
-            &:nth-child(4) {
-                order: 4;
-            }
-            &:nth-child(5) {
-                order: 5;
-            }
-            &:nth-child(2),
-            &:nth-child(3) {
-                margin: 0;
-            }
-            &:nth-child(4),
-            &:nth-child(5) {
-                margin: 0;
-            }
-        }
-    }
-}
-
-@include responsive(map-get($sizes, 'm')) {
-    .team-section {
-        &__list-item {
-            &__tab {
-                padding-bottom: .5rem;
-            }
-            img {
-                height: 150px;
-                margin: 0rem;
-            }
         }
     }
 }

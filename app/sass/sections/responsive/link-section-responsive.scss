@@ -1,0 +1,32 @@
+@include responsive(map-get($sizes, 's')) {
+    .link-section__container {
+        flex-direction: column;
+    }
+    .link-section__container__tab {
+        width: 100%;
+    }
+    .riftcat {
+        background: #CCE241;
+    }
+}
+
+@include responsiveLandscape(map-get($sizes, 's')) {
+    .link-section__container {
+        flex-direction: row;
+    }
+    .link-section__container__tab {
+        width: 49%;
+    }
+}
+
+@include responsive(map-get($sizes, 'm')) {
+    .link-section__container__tab {
+        transform: scale(0);
+    }
+}
+
+@include responsive(map-get($sizes, 'l')) {
+    .link-section__container__tab {
+        transform: scale(0);
+    }
+}
